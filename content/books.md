@@ -9,7 +9,7 @@ I really love reading. If I am not training or at school, I probably have a book
 
 ## On my shelf right now
 
-- Add a book you are reading here
-- And another one
+- *Bogor Mengaduk Waktu* by Avia Maulidina - halfway through and I can't stop
+- *Laut Bercerita* by Leila S. Chudori - next in the queue
 
 ![my bookshelf](photos/bookshelf.jpg) ![reading now](photos/reading-now.jpg)
