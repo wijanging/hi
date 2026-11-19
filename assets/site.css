@@ -101,6 +101,8 @@ code { font-size: .85em; }
 
 .intro { max-width: 34em; font-size: 19px; }
 .intro p { margin: 0 0 16px; }
+.intro sup { color: var(--coral); font-weight: 700; }
+.intro small { display: block; font-size: 14.5px; line-height: 1.5; color: var(--soft); padding-left: 12px; border-left: 3px solid var(--coral); }
 .intro ul { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .intro li {
   padding: 6px 14px; border: var(--edge); border-radius: 999px; font-weight: 600; font-size: 15px;
