@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hi. i am. wijanging</title>
+<meta name="description" content="Hi, I am Wijanging (El). Wushu athlete, student council member, orangutan mama, and future scientist or art historian.">
+<meta property="og:title" content="hi. i am. wijanging">
+<meta property="og:description" content="Wushu athlete, student council member, orangutan mama, and future scientist or art historian.">
+<meta property="og:type" content="website">
+<script>
+  (function () {
+    var t; try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<!--
+  HOW THIS PAGE WORKS
+  The words and photos are NOT in this file. They live in the "content" folder,
+  one Markdown file per section. This file only decides the order and the colour.
+  To add a section: copy one <section> block below and point data-md at a new .md file.
+  Colours you can use: t-coral, t-sun, t-mint, t-lilac, t-sky
+-->
+
+<nav class="nav">
+  <a class="me" href="#top">El <span>✦</span></a>
+  <div class="links">
+    <a href="#wushu">wushu</a>
+    <a href="#school">school</a>
+    <a href="#planet">planet</a>
+    <a href="#dream">dream</a>
+    <a href="#explore">explore</a>
+    <a href="#books">books</a>
+  </div>
+  <button id="theme" type="button">☾ night</button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <p class="url"><span class="dot"></span><span class="dot"></span><span class="dot"></span>https://hi.iam.wijangi.ng</p>
+    <h1>
+      <span class="w1">hi.</span>
+      <span class="w2">i am.</span>
+      <span class="w3">wijangi<i>.</i>ng</span>
+    </h1>
+    <div class="intro" data-md="content/hello.md"></div>
+  </div>
+  <div class="hero-photo" data-md="content/hello-photo.md"></div>
+  <span class="sticker s1">Hallo!</span>
+  <span class="sticker s2">武术</span>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>wushu</span><span>books</span><span>manga</span><span>orangutans</span><span>Deutsch</span><span>drawing</span><span>hiking</span><span>gamelan</span><span>science</span><span>art history</span>
+    <span>wushu</span><span>books</span><span>manga</span><span>orangutans</span><span>Deutsch</span><span>drawing</span><span>hiking</span><span>gamelan</span><span>science</span><span>art history</span>
+  </div>
+</div>
+
+<main>
+  <section id="wushu" class="card t-coral">
+    <p class="kicker">01 <b>move</b></p>
+    <div class="md" data-md="content/wushu.md"></div>
+  </section>
+
+  <section id="school" class="card t-sun">
+    <p class="kicker">02 <b>lead</b></p>
+    <div class="md" data-md="content/school.md"></div>
+  </section>
+
+  <section id="planet" class="card t-mint">
+    <p class="kicker">03 <b>care</b></p>
+    <div class="md" data-md="content/planet.md"></div>
+  </section>
+
+  <section id="dream" class="card t-lilac">
+    <p class="kicker">04 <b>dream</b></p>
+    <div class="md" data-md="content/dream.md"></div>
+  </section>
+
+  <section id="explore" class="card t-sky">
+    <p class="kicker">05 <b>explore</b></p>
+    <div class="md" data-md="content/explore.md"></div>
+  </section>
+
+  <section id="books" class="card t-coral">
+    <p class="kicker">06 <b>read</b></p>
+    <div class="md" data-md="content/books.md"></div>
+  </section>
+
+  <section id="say-hi" class="card t-ink">
+    <p class="kicker">07 <b>say hi</b></p>
+    <div class="md" data-md="content/say-hi.md"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Made with Markdown, tea and a broadsword. <a href="#top">Back to top ↑</a></p>
+</footer>
+
+<noscript><p class="oops">This page needs JavaScript to load its content.</p></noscript>
+<script src="assets/marked.min.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

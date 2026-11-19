@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wijanging</title>
+<script>
+  (function () {
+    var t; try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<!--
+  ONE TEMPLATE FOR EVERY EXTRA PAGE
+  page.html?p=record  shows  content/pages/record.md
+  page.html?p=clubs   shows  content/pages/clubs.md
+  To make a new page, add a new .md file in content/pages and link to page.html?p=its-name
+-->
+
+<nav class="nav">
+  <a class="me" href="./">El <span>✦</span></a>
+  <div class="links">
+    <a href="./">← home</a>
+    <a href="page.html?p=record">record</a>
+    <a href="page.html?p=clubs">clubs</a>
+  </div>
+  <button id="theme" type="button">☾ night</button>
+</nav>
+
+<main class="solo">
+  <section class="card t-paper">
+    <div class="md" id="page"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><a href="./">← Back home</a></p>
+</footer>
+
+<noscript><p class="oops">This page needs JavaScript to load its content.</p></noscript>
+<script src="assets/marked.min.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
